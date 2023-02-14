@@ -173,7 +173,7 @@ class VlcPlayerController extends ValueNotifier<VlcPlayerValue> {
           'initialize was called on a disposed VlcPlayerController');
     }
     if (value.isInitialized) {
-      throw Exception('Already Initialized');
+      // throw Exception('Already Initialized');
     }
 
     _lifeCycleObserver = VlcAppLifeCycleObserver(this);
